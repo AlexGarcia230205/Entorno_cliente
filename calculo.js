@@ -1,7 +1,5 @@
 //Declaramos las variables que vamos a usar
 
-BOTON_CALCULAR.addEventListener("click", calcularNota());
-
 function calcularNota() {
 
     /*Declaramos las constantes y variables, en este caso he puesto constantes ya que siempre serán
@@ -10,6 +8,10 @@ function calcularNota() {
   const BOTON_CALCULAR = document.getElementById("calcular");
   const RESULTADO = document.getElementById("resultado");
   const NOTA_INTRODUCIDA = document.getElementById("nota");
+
+  //Añadimos el evento al botón
+
+  BOTON_CALCULAR.addEventListener("click", calcularNota());
 
   //Luego voy a eliminar los espacios en blanco y ha pasar el texto a número
 
@@ -49,7 +51,7 @@ function calcularNota() {
   }
 
   //Mostramos un mensaje con la calificación obtenida
-  
+
   RESULTADO.textContent = `Has obtenido un ${calificacionObtenida}.`
 
 }
