@@ -11,7 +11,7 @@ function calcularNota() {
 
   //Añadimos el evento al botón
 
-  BOTON_CALCULAR.addEventListener("click", calcularNota());
+  BOTON_CALCULAR.addEventListener("click", calcularNota);
 
   //Luego voy a eliminar los espacios en blanco y ha pasar el texto a número
 
@@ -22,7 +22,7 @@ function calcularNota() {
 
   //Si no es un número, mostrará un mensaje de error
 
-  if (NaN(notaNumerica)){
+  if (isNaN(notaNumerica)){
     RESULTADO.textContent = 'ERROR: Debes introducir un número válido.'
     return;
   }
